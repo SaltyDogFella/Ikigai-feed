@@ -1,0 +1,35 @@
+{
+    "displayName": "Your Ikigai",
+    "blocks": [
+        {
+            "id": "aaaajqarouw24",
+            "type": "input",
+            "inputType": "firehose"
+        },
+        {
+            "id": "aaaajqaroucak",
+            "type": "regex",
+            "value": "What I love|Passion|Mission|What the world needs|What you are good at|Profession|Vocation|Career",
+            "caseSensitive": false
+        },
+        {
+            "type": "regex",
+            "value": "Porn|NSFW|submission|commission|permission\n",
+            "caseSensitive": false,
+            "id": "aaaajrdo27i5w",
+            "invert": true
+        },
+        {
+            "type": "remove",
+            "subject": "list",
+            "value": null,
+            "id": "aaaajrjtkqw5w",
+            "listUri": "at://did:plc:vig5txmvxugry3h5x36mcva2/app.bsky.graph.list/3kcoi5pv3u327"
+        },
+        {
+            "id": "aaaajqarozuqo",
+            "type": "sort",
+            "sortType": "created_at"
+        }
+    ]
+}
